@@ -214,7 +214,7 @@
             return populateInvoice(data);
         }
 
-        function loadDemoData() {
+        //function loadDemoData() {
             const demoProducts = [ { sanpham: "Phần mềm quản lý bán hàng", dvt: "Gói", soluong: 1, dongia: "3500000", thanhtien: "3500000", ghi_chu: "Bản quyền vĩnh viễn" }, { sanpham: "Dịch vụ hỗ trợ kỹ thuật", dvt: "Năm", soluong: 1, dongia: "1200000", thanhtien: "1200000", ghi_chu: "" }, { sanpham: "Tích hợp cổng thanh toán", dvt: "Lần", soluong: 1, dongia: "1000000", thanhtien: "1000000", ghi_chu: "" }, ];
             const subtotal = 5700000; const discount = 200000; const totalAfterDiscount = subtotal - discount; const vatPercent = "8%"; const vatAmount = totalAfterDiscount * 0.08; const totalAfterVat = totalAfterDiscount + vatAmount;
             const data = {
