@@ -214,15 +214,15 @@
             return populateInvoice(data);
         }
 
-        //function loadDemoData() {
+        function loadDemoData() {
             const demoProducts = [ { sanpham: "Phần mềm quản lý bán hàng", dvt: "Gói", soluong: 1, dongia: "3500000", thanhtien: "3500000", ghi_chu: "Bản quyền vĩnh viễn" }, { sanpham: "Dịch vụ hỗ trợ kỹ thuật", dvt: "Năm", soluong: 1, dongia: "1200000", thanhtien: "1200000", ghi_chu: "" }, { sanpham: "Tích hợp cổng thanh toán", dvt: "Lần", soluong: 1, dongia: "1000000", thanhtien: "1000000", ghi_chu: "" }, ];
             const subtotal = 5700000; const discount = 200000; const totalAfterDiscount = subtotal - discount; const vatPercent = "8%"; const vatAmount = totalAfterDiscount * 0.08; const totalAfterVat = totalAfterDiscount + vatAmount;
             const data = {
-                tenCongTy: 'CH VTNN SÁU DŨNG', diaChi: 'xã Châu Phong, tỉnh An Giang', soDienThoai: '0977708827', email: 'binh8827@gmail.com', website: '......',
-                orderNumber: 'DEMO-EMS-001', orderDate: new Date().toISOString(), customerName: 'Khách hàng Demo', diaChiKhachHang: '25/10 Hậu Giang, Phường 4, Quận Tân Bình, TP.HCM',
+                tenCongTy: 'VAT TU NONG NGHIEP SAU DUNG', diaChi: 'xã Châu Phong, tỉnh An Giang', soDienThoai: '0987777780', email: 'anh280318@gmail.com', website: '......',
+                orderNumber: 'DEMO-001', orderDate: new Date().toISOString(), customerName: 'Khách hàng Demo', diaChiKhachHang: 'Ap Phu Hung, xã Phu Vinh',
                 subtotal: subtotal.toString(), discount: discount.toString(), totalAfterDiscount: totalAfterDiscount.toString(), vatPercent: vatPercent, vatAmount: vatAmount.toString(), totalAfterVat: totalAfterVat.toString(),
-                notes: 'MST: 0316870151. Đại diện pháp luật: Nguyễn Tấn Hiền.', productsJson: encodeURIComponent(JSON.stringify(demoProducts)),
-                bankName: 'ACB', accountNumber: '181119878', accountHolder: 'CONG TY TNHH GIAI PHAP SO EMS'
+                notes: 'MST: 0. Đại diện pháp luật: Tran Thi Kim Anh.', productsJson: encodeURIComponent(JSON.stringify(demoProducts)),
+                bankName: 'MB', accountNumber: '0987777780', accountHolder: 'VAT TU NONG NGHIEP SAU DUNG'
             };
             const watermark = document.createElement('div'); watermark.className = 'demo-watermark'; watermark.innerHTML = 'Bản Demo<br><span style="font-size: 0.5em; letter-spacing: 1px;">EMS SOLUTION</span>'; document.getElementById('bill-container').appendChild(watermark);
             return populateInvoice(data);
